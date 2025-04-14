@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{823E98C5-FEBE-45BD-B3CC-00EE7765829A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>NazKuafor.My.MyApplication</StartupObject>
+    <RootNamespace>NazKuafor</RootNamespace>
+    <AssemblyName>NazKuafor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NazKuafor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NazKuafor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AyarlarModul.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gelir.Designer.vb">
+      <DependentUpon>gelir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gelir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gelirGidervb.Designer.vb">
+      <DependentUpon>gelirGidervb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gelirGidervb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="islem.Designer.vb">
+      <DependentUpon>islem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="islem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelKayit.Designer.vb">
+      <DependentUpon>modelKayit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modelKayit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelListesi.Designer.vb">
+      <DependentUpon>modelListesi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modelListesi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PersonelKayit.Designer.vb">
+      <DependentUpon>PersonelKayit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelKayit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelListesi.Designer.vb">
+      <DependentUpon>PersonelListesi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelListesi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="randevuKayit.Designer.vb">
+      <DependentUpon>randevuKayit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="randevuKayit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="randevulistesivb.Designer.vb">
+      <DependentUpon>randevulistesivb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="randevulistesivb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stoklistesi.Designer.vb">
+      <DependentUpon>stoklistesi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stoklistesi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunKayit.Designer.vb">
+      <DependentUpon>UrunKayit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UrunKayit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunListesi.Designer.vb">
+      <DependentUpon>UrunListesi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UrunListesi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelir.resx">
+      <DependentUpon>gelir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelirGidervb.resx">
+      <DependentUpon>gelirGidervb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="islem.resx">
+      <DependentUpon>islem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modelKayit.resx">
+      <DependentUpon>modelKayit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modelListesi.resx">
+      <DependentUpon>modelListesi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKayit.resx">
+      <DependentUpon>PersonelKayit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelListesi.resx">
+      <DependentUpon>PersonelListesi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="randevuKayit.resx">
+      <DependentUpon>randevuKayit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="randevulistesivb.resx">
+      <DependentUpon>randevulistesivb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stoklistesi.resx">
+      <DependentUpon>stoklistesi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunKayit.resx">
+      <DependentUpon>UrunKayit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunListesi.resx">
+      <DependentUpon>UrunListesi.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9027292_cancel_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9027292_cancel_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2303135_arrow_back_left_refresh_renew_icon %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8726195_save_floppy_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8726424_trash_alt_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8726304_refresh_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8726214_search_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6..jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pers1..jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pastel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2303204_done_options_todo_menu_check_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arka5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kare2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arka6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arka7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\144642325_10016297.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\144642276_10055906.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foto1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 011017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 0110171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 0110172.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012727.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 0127271.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012558.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012602.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012608.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012614.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012621.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012625.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012629.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012636.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-05-15 012647.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8726195_save_floppy_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9027370_save_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1005418932-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-pastel-gradient-background-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arka61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-leah-newhouse-50725-325522.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-moose-photos-170195-1029894 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-suzyhazelwood-2536965.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1246328123-612x612.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

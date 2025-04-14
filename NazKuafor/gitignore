@@ -1,0 +1,32 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio files
+.vs/
+
+# Windows thumbnail cache
+Thumbs.db
+ehthumbs.db
+
+# Compiled DLLs and EXEs
+*.dll
+*.exe
+*.pdb
+
+# Backup files
+*.bak
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Other
+*.log
